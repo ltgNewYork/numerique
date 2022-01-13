@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/class" href="Bootstrap/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <title>Numerique site</title>
+
+
+
+    <style>
+      
+      .nav1
+      {
+          width:100%;
+          height: 45px;
+          display: -webkit-flex;
+          background-color: linen;
+          
+          justify-content: space-between;
+
+      }
+      .nav1 h1
+      {
+          float: left;
+          font-size: 20px;
+          color: black;
+          font-weight: bold;
+          display: block;
+        
+      }
+      /* #inverse-lettre:hover{
+          color: blue;
+          transform: ;
+      } */
+      #inverse-lettre{
+          display: inline-block ;
+          background-color: blue;
+          width: 25px;
+          height: 25px;
+          color:red;
+          font-size: 12px;
+       transform: rotateY(-90deg);
+      }
+    .nav1 form .div1
+    {
+        
+
+    }
+    .nav1 .div1 .input1
+    {
+        width: 300px;
+        height: 30px;
+        padding: inherit;
+        border-style: none;
+
+
+    }
+
+    .nav1 .ul1
+    {
+        list-style-type: none;
+        display: -webkit-flex;
+        color:black;
+       
+
+    }
+   li
+    {
+        list-style: none;  
+        color: black;
+    }
+
+    li a
+    {
+        text-decoration: none;
+        color:black;
+        float: right;
+    }
+    a{
+        color:black;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    /*-------------------------------------------------*/
+
+
+    .nav2
+    {
+        margin-top: 15px;
+        width: 100%;
+        height: 45px;
+        color: white;
+        background-color: black;
+        display: inline-flex;
+        justify-content: space-around;
+
+    }
+    .ul2
+    {
+        display: -webkit-flex;
+        color: white;
+        
+    }
+    .ul2:hover{
+        background-color: grey;
+    }
+
+
+    .divdebloc{
+        width: 100%;
+        height: 45%;
+        display: -webkit-flex;
+        justify-content: space-around;
+        color: black;
+    }
+
+    .ul3
+    {
+        list-style-type: none;
+        color: black;
+        display: -webkit-flex;
+        justify-content: center;
+       
+    }
+    .ul3 li{
+        color: black;
+        box-shadow: 1px 2px 2px blueviolet;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .ul3 li a{
+        color: black;
+    }
+
+    .divdesformulaires{
+           width:60%;
+           height:80%;
+           justify-content: space-around;
+           color:black;
+           background-color: rgb(236, 231, 231);
+           display: -webkit-inline-flex;
+           box-shadow: 3px 2px rgb(248, 247, 247);
+       }
+
+       .divdesformulaires h1{
+           font-size:25px;
+           text-shadow: 3px 5px rgb(74, 245, 74);
+           text-align:center;
+           box-shadow: 2px white;
+       }
+       .divdesformulaires p{
+           font-size:10px;
+           text-align:center;
+       }
+       .divdesformulaires .divduformulairedegauche {
+           width:25%;
+           color:black;
+       }
+       .divduformulairedegauche form label span {
+           color:red;
+       }
+       .divduformulairedegauche form .input-nom{
+           width:inherit;
+           height:25px;
+           text-align:center;
+       }
+       .divduformulairedegauche form .input-mdp{
+        width:inherit;
+        height:25px;
+        text-align:center;
+        color:black;
+       }
+       .divduformulairedegauche form .input-submite{
+        width:inherit;
+        height:25px;
+        text-align:center;
+        background-color:rgb(45, 177, 45);
+        color:black;
+        font-size:25px;
+
+    }
+
+    .divduformulairededroite
+            {
+                width:25%;
+                color:black;
+            }
+            .divduformulairededroite .h1{
+                font-size:25px;
+                text-shadow:2px 3px rgb(74, 245, 74);
+                text-align:center;
+            }
+            .divduformulairededroite .p1{
+                text-align:center;
+                font-size:10px;
+                color:black;
+            }
+
+            .divduformulairededroite form label span{
+                color:red;
+            }
+            .divduformulairededroite form input{
+                width:auto;
+                height:25px;
+                text-align:center;
+                color:black;
+            }
+
+           .divduformulairededroite form .divdeRecaptcha
+           {
+               background-color:darkgray;
+               width:auto;
+               height:20%;
+
+           }
+          
+           footer
+            {
+             display: -webkit-inline-flex;
+           
+            }
+         footer .divgauchedufooter
+         {
+             justify-content:flex-start;
+             display:inline;
+             color:black;
+             margin-bottom: 10px;
+
+         }
+         footer .divgauchedufooter p
+         {
+             color:black;
+             font-size:15px;
+             
+            
+
+         }
+
+         footer .divgauchedufooter p button
+         {
+             width:30px;
+             height:30px;
+         }
+         
+         footer .divdroitdufooter
+         {
+            justify-content: flex-end;
+            margin-left: 800px;
+            
+           
+        } 
+        footer .divdroitdufooter input
+        {
+            width:auto;
+            height:20%;
+        }
+        footer .divdroitdufooter button 
+        {
+            background-color:limegreen;
+            color:black;
+            width: auto;
+            height: 28%;
+        }
+        
+
+        ul li{
+       list-style-type:none;
+       display: -webkit-inline-flex;
+       color:black;
+       margin-bottom: 50px;
+       justify-content: center;
+   }
+
+   ul li a
+   {
+       text-decoration:none;
+       
+   }
+   .lastdiv{
+       background-color: black;
+       display: -webkit-inline-flex;
+       font-size: 18px;
+       width: 100%;
+       color: white;
+       justify-content: center;
+
+   }
+   @media screen and (max-width:900px) {
+       body{
+        width: 80%;
+        flex-direction: initial;
+        display: -webkit-inline-flex;
+        justify-self: auto;
+       }
+   }
+
+    </style>
+
+
+
+</head>
+<body>
+    <nav class="nav1">
+        <h1><span id="inverse-lettre">LES</span> NUMERIQUES</h1>
+        <form>
+           <div class="div1"> 
+            <input type="search" name="searche" placeholder="Rechercher un produit,un test ,une marque..." class="input1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="float: right;">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+        </div>
+        </form>
+
+        <ul class="ul1">
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                      </svg>
+                </a>
+            </li>
+
+        </ul>
+        <a href="#" style="text-decoration: none; font-size: 20px;">FORUM</a>
+         <a href="#" style="font-size: 20px; float: right;">CONNEXION<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></a>
+
+
+    </nav>
+     <nav class="nav2">
+         <ul class="ul2">
+             <li>
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button" viewBox="0 0 16 16">
+                    <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h8A1.5 1.5 0 0 1 11 1.5v2A1.5 1.5 0 0 1 9.5 5h-8A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-8z"/>
+                    <path d="m7.823 2.823-.396-.396A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                  </svg>TOUTES LES PRODUITS</a>
+             </li>
+             <li>
+                <a href="#">TOUS LES BONS PLANS</a>
+            </li>
+            <li>
+                <a href="#">TESTS</a>
+            </li>
+            <li>
+                <a href="#">ACTUALITES</a>
+            </li>
+            <li>
+                <a href="#">COMPARATIFS & GUIDES D'ACHATS</a>
+            </li>
+            <li>
+                <a href="#">TTELECHARGEMENT</a>
+            </li>
+            <li>
+                <a href="#">VIE OU NET</a>
+            </li>
+             <li>
+                 <a href="#">TEMISSIONS</a>
+             </li>
+             <li>
+                 <a href="#" style="color: green;">PRO<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg></a>
+             </li>
+         </ul>
+     </nav>
+    
+
+     <div class="divdebloc">
+         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>ionicons-v5-m</title><path d="M432,208H288L320,16,80,304H224L192,496Z"/></svg>En ce moment:</p>
+         <ul class="ul3">
+             <li><a href="#">Jeu concours KEF</a></li>
+             <li><a href="#">Dacia Spacing</a></li>
+             <li><a href="#">Black Friday</a></li>
+             <li><a href="#">google pixel 6</a></li>
+             <li><a href="#">Windows 11</a></li>
+             <li><a href="#">Nos labos</a></li>
+             <li><a href="#">Réparabilité</a></li>
+             <li><a href="#">Afficher plus</a></li>
+
+         </ul>
+
+     </div>
+      <p style="margin-left: 1040px;">publiité</p>
+
+
+     <div class="divdesformulaires">
+          
+         <div class="divduformulairedegauche">
+            <h1>CONNEXION</h1>
+            <p>connectez vous pour profiter des services communautaires,donner votre avis et gerer vos parametres personnels.
+            </p>
+            <form>
+                <label for="appelation"><span>*</span>Nom utilisateur / mot de passe </label>
+                <input type="text/email" name="appelation" class="input-nom" placeholder="Nom utilisateur ou Adresse emai"><br>
+                <input type="checkbox" name="check"><label for="checkbox">Se souvenir de moi</label><br><br>
+
+                <label for="appelation"><span>*</span>mot de pass</label>
+                <input type="password" name="mdp" class="input-mdp" placeholder="mot de passe"><br>
+                <a href="#" style="text-align: end; text-decoration: none;">mot de passe oublié ?</a><br><br>
+
+                <input type="submit" value="CONNEXION" class="input-submite">
+             </form>
+
+          </div>
+            
+           
+         <div class="divduformulairededroite">
+             <h1 class="h1">INSCRIPTION</h1>
+             <P class="p1">vOUS N'AVEZ PAS ENCORE DE COMPTE, Inscrivez vous gratuitement</P>
+             
+            <form>
+               <label for="nom"><span>*</span>Nom de l'utilisateur</label>
+                <input type="text" name="username" placeholder="nom de l'utilisateur"><br><br>
+                
+                <label for="mail"><span>*</span>Adresse email</label>
+                <input type="email" name="mail" placeholder="Adressen mail"><br><br>
+
+                <label for="mdp"><span>*</span>mot de passe </label>
+                <input type="password" name="mdp" placeholder="Mot de passe"><br><br>
+
+                <label for="mdp"><span>*</span>mot de passe(validation)</label>
+                <input type="password" name="mdp" placeholder="mot de passe(validation)"><br><br>
+               
+                <label for="Recaptcha"><span>*</span>Recaptcha</label>
+               <div class="divdeRecaptcha">
+                <input type="checkbox" name="check"><label>je ne suis pas un robot</label> 
+               </div><br><br>
+               <input type="checkbox" name="check"><label for="new">je souhaite recevoir des newsletters chaque semaine</label><br>
+               <input type="checkbox" name="check"><label for="new">je souhaite recevoir les offres des parametre de numeriques</label><br>
+               <input type="checkbox" name="check"><label for="new">j'ai lu et j'accepte les condition d'utilisations</label><br>
+
+               <input type="submit" name="inscription" value="INSCRIPTION" style="background-color: limegreen;">
+
+            </form>
+
+        </div>
+    </div>
+
+   <div style="background-color: limegreen; width: 100%; height: auto;">
+    <footer>
+        <div class="divgauchedufooter">
+        <p>Suivez-nous<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+         </svg></button>
+         <button>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+               <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+             </svg>
+         </button>
+         <button>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+             </svg>
+         </button>
+         <button>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+               <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+             </svg>
+         </button>
+         <button>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+               <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+               <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+             </svg>
+         </button>
+       </p>
+      </div>
+
+   <div class="divdroitdufooter">
+       <label for="num">Abonnez-vous à la numletters</label><br>
+       <input type="email" name="addrese" placeholder="Mon addresse mail"><button>OK</button>
+   </div>
+
+    </footer>
+    <ul>
+        <li>
+            <a href="#">Contact </a>
+       </li>
+ 
+       <li>
+         <a href="#"> FAQ</a>
+        </li>
+       
+      <li>
+         <a href="#">La redaction </a>
+      </li>
+    <li>
+     <a href="#">Comparaison du prix </a>
+    </li>
+     <li>
+     <a href="#">Parametrer les cookies</a>
+    </li>
+   </ul>
+</div>
+<div class="lastdiv">
+    <p>Politique de protection et des donnees personnelles</p>
+    <p>condition Générales d'Utilisation FAQ-Vos choix concernes l'utilisation de cookies</p>
+    <p>Tout droits réservés &#169 2021</p>
+
+</div>
+    
+</body>
+</html>
